@@ -1,0 +1,14 @@
+redis:
+  host: redis
+  port: 6379
+  db: 7
+  minsize: 1
+  maxsize: 5
+
+postgres:
+  dsn: 'dbname=postgres user=postgres password=postgres host=postgres'
+
+host: 0.0.0.0
+port: 5000
+external_host: localhost
+external_port:

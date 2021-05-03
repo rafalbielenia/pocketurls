@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+      tier: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+        tier: backend
+    spec:
+      containers:
+      - name: master
+        image: rbielenia/nginx
+        resources:
+          requests:
+            cpu: 1000m
+            memory: 128Mi
+        ports:
+        - containerPort: 80
