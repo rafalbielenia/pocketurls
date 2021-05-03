@@ -36,8 +36,8 @@ Now you can access the app locally at http://localhost
 | Endpoint        | HTTP Method           | CRUD Method  | Result |
 | --------------- |-----------------------| -------------|--------|
 | /     | GET | READ | POCKETURLS web application|
-| /<short_form> | GET      |    READ | Get redirected to original URL from shortened form|
-| /shorten/<url> | POST | CREATE | Shorten URL|
+| /{short_form} | GET      |    READ | Get redirected to original URL from shortened form|
+| /shorten/ {url}  | POST | CREATE | Shorten URL|
 
 
 ## DATABASE
