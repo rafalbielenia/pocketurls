@@ -37,7 +37,7 @@ Now you can access the app locally at http://localhost
 | --------------- |-----------------------| -------------|--------|
 | /     | GET | READ | POCKETURLS web application|
 | /<short_form> | GET      |    READ | Get redirected to original URL from shortened form|
-| /shorten | POST | CREATE | Shorten URL|
+| /shorten/<url> | POST | CREATE | Shorten URL|
 
 
 ## DATABASE
